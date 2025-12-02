@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function closeDropdownSoon() {
     clearTimeout(closeTimeout);
-    closeTimeout = setTimeout(() => dropdown.classList.remove('open'), 150); // 150ms delay
+    closeTimeout = setTimeout(() => dropdown.classList.remove('open'), 100); // 150ms delay
   }
 
   // open when entering the nav item

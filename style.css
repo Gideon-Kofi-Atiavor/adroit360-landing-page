@@ -255,17 +255,35 @@ header{z-index:900}
 }
 
 .cta-section{
-    background-color: #f31571;
-    padding: 200px;
-    
+    background-color: #ee2b7c;
+    padding: 90px;
+    text-align: center;
     color: white;
     border-color: white;
+    margin-top: 50px;
     
 }
 
+.cta-section .bac{
+    background-color: rgb(35, 79, 223);
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1%.2rem;
+    cursor: pointer;
+    border: solid white 2px;
+}
+
+.cta-section .bac:hover{
+    background-color: red;
+    color: rgb(242, 243, 247);
+}
 .cta-section .h1{
     font-size: 2.5rem;
     margin-bottom: 20px;
+    padding-bottom: 70px;
     
 }
 
@@ -283,13 +301,13 @@ details {
 
 summary {
   cursor: pointer;
-  list-style: none; /* remove default disclosure marker in some browsers */
+  list-style: none; 
   font-weight: 600;
   font-size: 1rem;
   outline: none;
 }
 
-/* change marker and spacing */
+
 summary::-webkit-details-marker { display: none; }
 summary::before {
   content: "►";
@@ -299,10 +317,10 @@ summary::before {
   transition: transform 0.18s ease;
 }
 
-/* rotate marker when open */
+
 details[open] summary::before { transform: rotate(90deg); }
 
-/* answer text */
+
 details p { margin-top: 0.75rem; color: #444; line-height: 1.5; }
 
 
@@ -316,7 +334,7 @@ html{
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     max-width: var(--content-width);
-    padding: 40px 20px;
+    padding: 40px 40px;
 }
 
 .delivered-card{
@@ -338,3 +356,64 @@ html{
   margin-bottom: 15px;
   color: #4a90e2;
 }
+
+.price-grid{
+     display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: var(--content-width);
+    padding: 40px 40px;
+   
+}
+
+.price-card {
+  background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(44,62,80,0.06);
+    border: 1px solid rgba(24, 2, 2, 0.03);
+    display: flex;                    
+    flex-direction: column;           
+    justify-content: space-between;   
+    height: 100%;                     
+    text-align: center;
+}
+
+.price-card .bt:hover {
+  transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.price-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #4a90e2;
+}
+
+.price-grid .bt{
+    background-color: #e06e90;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 80%;                       
+    max-width: 200px;
+    margin: 0 auto;                   
+    display: block;                   
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+
+.price-card .h4 .p{
+    margin-top: 15px;
+    padding-top: 20px;
+    color: #2c3e50;
+    font-size: 1.2rem;
+    font-weight: 600;}
+
+
+
