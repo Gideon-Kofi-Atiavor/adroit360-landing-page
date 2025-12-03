@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     panel.addEventListener('mouseleave', closeDropdownSoon);
   }
 
-  // optional: support keyboard (focus) opening for accessibility
+  // support keyboard (focus) opening for accessibility
   const trigger = dropdown.querySelector('a');
   if (trigger) {
     trigger.addEventListener('focus', openDropdown);
