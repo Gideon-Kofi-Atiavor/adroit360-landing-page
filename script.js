@@ -33,3 +33,15 @@ document.addEventListener('DOMContentLoaded', function () {
     trigger.addEventListener('blur', closeDropdownSoon);
   }
 });
+
+document.getElementById('hamburger').addEventListener('click', function() {
+    document.getElementById('nav-menu').classList.toggle('active');
+    document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
+  });
+
+  // Close mobile menu when clicking a link
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('nav-menu').classList.remove('active');
+    });
+  });
